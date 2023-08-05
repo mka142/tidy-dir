@@ -1,6 +1,6 @@
 import os
 import json
-from typing import TypeVar
+from typing import TypeVar, Dict, List, AnyStr
 import logging
 
 CONFIG_FILE_NAME = ".tidy-dir-config.json"
@@ -13,7 +13,9 @@ TypeFileExtension = TypeVar("TypeFileExtension", str, bytes)
 TypeSourceDir = TypeVar("TypeSourceDir", str, bytes)
 
 
-def get_config(directory) -> dict[TypeSourceDir, list[TypeFileExtension]]:
+def get_config(
+    directory: AnyStr,
+) -> Dict[TypeSourceDir, List[TypeFileExtension]]:
     source_dir = get_source_dir(directory)
     config_file = os.path.join(source_dir, CONFIG_FILE_NAME)
 
