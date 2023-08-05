@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8") as f:
 
 setup(
     name="tidy-dir",
-    version="0.0.1",
+    version="0.0.2",
     author="mka142",
     author_email="mka@diveinai.com",
     url="https://github.com/mka142/tidy-dir",
