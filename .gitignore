@@ -1,0 +1,6 @@
+dist/
+env/
+tidy_dir.egg-info/
+build/
+__pycache__/
+*.pyc
