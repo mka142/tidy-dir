@@ -12,8 +12,8 @@ def setup_test_directory():
     test_dir = tempfile.mkdtemp()
 
     # Create test files in the source directories
-    file1 = os.path.join(test_dir, "source_directory_1", "file1.txt")
-    file2 = os.path.join(test_dir, "source_directory_1", "file2.txt")
+    file1 = os.path.join(test_dir, "file1.txt")
+    file2 = os.path.join(test_dir, "file2.txt")
     os.makedirs(os.path.dirname(file1), exist_ok=True)
     os.makedirs(os.path.dirname(file2), exist_ok=True)
 
